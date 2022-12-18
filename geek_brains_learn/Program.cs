@@ -4,13 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(Leasson1.Max(12, 7));
-        Console.WriteLine(Leasson1.Even(1));
-
-        var data = Leasson1.Range(7);
-        foreach (var item in data)
-        {
-            Console.WriteLine(item);
-        }
+       // Console.WriteLine(Lesson2.SecondNumber(345));
+       // Console.WriteLine(Lesson2.ThirdNumber(34));
+        Console.WriteLine(Lesson2.HollyDay(70));
     }
 }
