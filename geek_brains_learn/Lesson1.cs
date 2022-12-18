@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace geek_brains_learn
 {
 
-    public static class Leasson1
+    public static class Lesson1
     {  
         public static string Max(int a, int b)
         {
