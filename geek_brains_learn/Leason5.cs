@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace geek_brains_learn;
+﻿namespace geek_brains_learn;
 
 public class Leason5
 {
