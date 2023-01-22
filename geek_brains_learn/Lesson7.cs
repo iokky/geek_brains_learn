@@ -55,7 +55,6 @@ namespace geek_brains_learn
 
             }
             return result;
-
         }
     }
 }
