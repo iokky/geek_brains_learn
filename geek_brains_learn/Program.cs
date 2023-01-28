@@ -5,28 +5,31 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[,] array = new int[,]
-        {
-                {1, 4, 7, 2 },
-                {5, 9, 2, 3 },
-                {8, 4, 2, 4 }
-        };
-        var data = Lesson7.AverageArray(array);
-        foreach (var item in data)
-        {
-            Console.WriteLine(item);
-        }
-    }
-    static void MultiArrayPrint(int[,] data)
-    {
-        for (int i = 0; i < data.GetLength(0); i++)
-        {
-            for (int j = 0; j < data.GetLength(1); j++)
-            {
-                Console.Write($"{data[i, j]} \t");
-            }
-            Console.WriteLine();
-        }
+        /*        int[,] array = new int[,]
+                {
+
+                };
+                int[][] data = Lesson8.MultiArraySort(array);
+                foreach (var item in data)
+                {
+                    foreach (var i in item)
+                    {
+                        Console.Write(i);
+                    }
+                    Console.WriteLine();
+                }
+
+
+                var MultiData = Lesson8.MatrixMultiplication();
+                foreach (var item in data)
+                {
+                    Console.WriteLine(item);
+                }*/
+
+        //Console.WriteLine(Lesson8.TrippleArrayGenerator());
+        //Lesson8.TrippleArrayGenerator();
+        Lesson8.SpiralAddedToArray();
+
     }
 
 }

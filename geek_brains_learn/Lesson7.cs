@@ -42,8 +42,6 @@ namespace geek_brains_learn
 
         public static double[] AverageArray(int[,] array)
         {
-
-
             double[] result = new double[array.GetLength(1)];
 
             for (int i = 0; i < array.GetLength(0); i++)
