@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geek_brains_learn", "geek_brains_learn\geek_brains_learn.csproj", "{EF23BC96-EF2C-4737-BC49-1B68AB416147}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "geek_brains_learn", "geek_brains_learn\geek_brains_learn.csproj", "{EF23BC96-EF2C-4737-BC49-1B68AB416147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB_SC", "GB_SC\GB_SC.csproj", "{0705B6C0-13B2-4170-9B33-22104A043AFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EF23BC96-EF2C-4737-BC49-1B68AB416147}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF23BC96-EF2C-4737-BC49-1B68AB416147}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF23BC96-EF2C-4737-BC49-1B68AB416147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0705B6C0-13B2-4170-9B33-22104A043AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0705B6C0-13B2-4170-9B33-22104A043AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0705B6C0-13B2-4170-9B33-22104A043AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0705B6C0-13B2-4170-9B33-22104A043AFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
