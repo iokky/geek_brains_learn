@@ -30,4 +30,26 @@ internal class ls2
     public static string GetMouthName(int number) => mouth[number];
 
     public static bool GetAverageOfNumber(int number) => number % 2 == 0;
+
+    public static void Order()
+    {
+        string company = "СуперЧек.ru";
+        int OrderNumber = 4201;
+        string cashier = "Иванов";
+
+        string template = $"\tOOO '{company}'\n\t   Чек: {OrderNumber}\n\t  Кассир:{cashier}" +
+            $"\n1.Кирпич пустотельный одинарный М-150 x 10" +
+            $"\n  Стоимость........................8176.00" +
+            $"\n2.Цемент ПЦ-400 Д 20 (в мешках)" +
+            $"\n  Стоимость........................5400.00" +
+            $"\n3.Щебня фракция 20х40 т.5 х 480" +
+            $"\n  Стоимость........................5400.00" +
+            $"\n==========================================" +
+            $"\nВсего.............................16628.00" +
+            $"\nККМ  00000000000 ИНН 00000000000000  #{OrderNumber}";
+
+        Console.WriteLine(template);
+    }
+
+    public static string HumidityOfWinter(int i, int tempMin, int tempMax) => i == 1 || i == 11 || i == 12 & AverageTemp(tempMin, tempMax) > 0 ? "Weat Winter" : "Dry Winter";
 }
