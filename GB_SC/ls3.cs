@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GB_SC;
+﻿namespace GB_SC;
 
 public static class ls3
 {
@@ -43,7 +37,6 @@ public static class ls3
             }
             Console.WriteLine();
         }
-
     }
 
     public static void StringReverse(string str)
@@ -90,7 +83,6 @@ public static class ls3
         {
             NegativeMove(array, a);
         }
-
     }
 
     public static void NegativeMove(int[] array,  int a)
@@ -103,7 +95,6 @@ public static class ls3
                 array[i] = array[i + 1];
             }
             temp--;
-
         }
 
         Array.Reverse(array);
