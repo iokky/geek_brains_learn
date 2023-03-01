@@ -2,22 +2,27 @@
 
 class Programm
 {
-    public static void Fio()
-    {
-        Console.WriteLine(ls4.GetFullName("Ivan", "Ivanov", "Konstantinovich"));
-        Console.WriteLine(ls4.GetFullName("Petr", "Petrov", "Semenovich"));
-        Console.WriteLine(ls4.GetFullName("Stepan", "Kotov", "Andreevich"));
-    }
     static void Main(string[] args)
     {
-        //Console.WriteLine(ls4.CountSymbolByString(Console.ReadLine()??""));
-        //Console.WriteLine(ls4.GetSeasson(13));
-
-        string s = "Предложение один Теперь предложение два Предложение три";
-
-        Console.WriteLine(ls4.ReplaceString(s));
-        ls4.Fibonachi(3);
+        //ls5.Write(ls5.BinareDataWrite(890));
+        Foo();
     }
 
+    static void Foo()
+    {
+        Employee[] employers =
+        {
+            new Employee("Ivanov", "Engineer", "iv@i.com", "890", 40000, 23),
+            new Employee("Petrov", "Engineer", "Petr@i.com", "112", 45000, 30),
+            new Employee("Filatov", "Programmer", "Filme@i.com", "040", 80000, 35),
+            new Employee("Smirnova", "Hr", "myHr@i.com", "011", 30000, 42),
+            new Employee("Kozlov", "Director", "BossBox@i.com", "011", 200000, 51),
+        };
 
+        foreach (Employee emp in employers)
+        {
+            if(emp.GetAge() > 40)
+                emp.GetInfo();
+        }
+    }
 }
