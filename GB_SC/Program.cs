@@ -4,11 +4,39 @@ class Programm
 {
     static void Main(string[] args)
     {
-        //ls5.Write(ls5.BinareDataWrite(890));
-        Foo();
+        string[,] array =
+        {
+            {"1", "error", "3", "4" },
+            {"5", "6", "7", "8" },
+            {"9", "10", "11", "12"},
+            {"9", "10", "11", "12"},
+        };
+
+        int x = 0;
+        try
+        {
+            try 
+            {
+                x = ArraySummator.SumOfArrayValue(array); 
+            } catch (MyArrayDataException e) 
+            {
+                Console.WriteLine(e.Message);
+            }
+
+        }
+        catch (MyArraySizeException e)
+        {
+
+            Console.WriteLine(e.Message);
+        }
+
+        Console.WriteLine(x);
+
+       
+
     }
 
-    static void Foo()
+    static void EmployeeSort()
     {
         Employee[] employers =
         {
@@ -19,10 +47,11 @@ class Programm
             new Employee("Kozlov", "Director", "BossBox@i.com", "011", 200000, 51),
         };
 
-        foreach (Employee emp in employers)
+        foreach (Employee emp in employers.Where(i => i.GetAge() > 40).ToArray())
         {
-            if(emp.GetAge() > 40)
-                emp.GetInfo();
+            emp.GetInfo();
         }
     }
+
+ 
 }
