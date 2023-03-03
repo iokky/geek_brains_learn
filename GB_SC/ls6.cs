@@ -4,15 +4,30 @@ using System.Diagnostics;
 namespace GB_SC;
 
 
-
 public static class TaskManager
 {
-    public static void GetProccess()
+    public static void GetProcessAll()
     {
         Process[] procesess = Process.GetProcesses();
+        Console.ForegroundColor = ConsoleColor.Green;
         foreach (Process process in procesess)
         {
+            Console.WriteLine($"{process.Id}_{process.ProcessName}____used: {process.PagedMemorySize64} MB");
+        }
+        Console.ResetColor();
+    }
+
+    public static void GetProcess(int id)
+    {
+        Process process = Process.GetProcessById(id);
+        try
+        {
             Console.WriteLine($"{process.Id}_{process.ProcessName}");
+        }
+        catch (Exception e)
+        {
+
+            Console.WriteLine(e.Message);
         }
     }
 
@@ -62,6 +77,14 @@ public class MyArrayDataException : Exception
 
 static class ArraySummator
 {
+    /// <summary>
+    /// <remarks>Array must be a multi array [4,4] </remarks>
+    /// </summary>
+    /// <param name="array">Array must be a multi array [4,4]</param>
+    /// <returns></returns>
+    /// <exception cref="MyArraySizeException"></exception>
+    /// <exception cref="MyArrayDataException"></exception>
+    
     public static int SumOfArrayValue(string[,] array)
     {
         if (array.GetLength(0) != 4 | array.GetLength(1) != 4)
@@ -82,8 +105,7 @@ static class ArraySummator
                 sum += int.Parse(array[i, j]);
             }
         }
-
         return sum;
-
     }
 }
+

@@ -17,7 +17,7 @@ public class ls4
         Autumn = 10, // сентябрь октябрь ноябрь
     }
     public static string GetFullName(string firstName, string lastName, string patrinymic) => $"{lastName} {firstName} {patrinymic}"; 
-    public static int CountSymbolByString(string word) => word.Count();
+    public static int SumSymbolByString(string word) => word.Sum(i => int.Parse(i.ToString()));
 
     public static string GetSeasson(int number)
     {

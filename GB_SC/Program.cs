@@ -2,11 +2,17 @@
 
 class Programm
 {
+
     static void Main(string[] args)
+    {
+        Console.WriteLine(ls4.SumSymbolByString("123"));
+    }
+
+    static void ArrayRun()
     {
         string[,] array =
         {
-            {"1", "error", "3", "4" },
+            {"1", "2", "3", "4" },
             {"5", "6", "7", "8" },
             {"9", "10", "11", "12"},
             {"9", "10", "11", "12"},
@@ -15,10 +21,11 @@ class Programm
         int x = 0;
         try
         {
-            try 
+            try
             {
-                x = ArraySummator.SumOfArrayValue(array); 
-            } catch (MyArrayDataException e) 
+                x = ArraySummator.SumOfArrayValue(array);
+            }
+            catch (MyArrayDataException e)
             {
                 Console.WriteLine(e.Message);
             }
@@ -31,9 +38,6 @@ class Programm
         }
 
         Console.WriteLine(x);
-
-       
-
     }
 
     static void EmployeeSort()
