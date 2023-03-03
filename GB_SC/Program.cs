@@ -5,7 +5,7 @@ class Programm
 
     static void Main(string[] args)
     {
-        Console.WriteLine(ls4.SumSymbolByString("123"));
+        Console.WriteLine(ls4.SumSymbolByString("1 2 3"));
     }
 
     static void ArrayRun()
